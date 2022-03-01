@@ -12,6 +12,7 @@ const typeDefs = gql`
     
     extend type Query {
         categories: [Category]
+        category(id: ID!): Category
     }
     
     extend type Mutation {
